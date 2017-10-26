@@ -1,0 +1,67 @@
+    <!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jeep-P-S</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <script type="text/javascript" src="passcheck.js"></script>
+        <script type="text/javascript" src="uploadimage.js"></script>
+	</head>
+	<body class="subpage">
+
+    <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a href="index.html" class="logo"><strong>Jeep-P-S</strong></a>
+          <nav id="nav">
+            <a href="about.html">About</a>
+            <a href="view-guides.html">Forum</a>
+            <a href="faq.html">FAQ</a>
+            <a href="login.html">Login/Sign Up</a>
+          </nav>
+
+          <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+        </div>
+      </header>
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner" >
+					<header class="align-center">
+						<h2>Create an Account</h2>
+					</header>
+
+                        <strong>First name: </strong><input type="text" name="fn" required="true"><br>
+                        <strong>Last name: </strong><input type="text" name="ln" required="true"><br>
+                        <strong>Email: </strong><input type="email" name="email" required="true"><br>
+                        <strong>Password: </strong><input type="password" name="p1" required="true" id="pass1"><br>
+                        <strong>Confirm Password: </strong><input type="password" name="cp" required="true" id="pass2" onkeyup="checkPass(); return false;"><br>
+                        <span id="pcheckmess" class="pcheckmess"></span>
+                        <br>
+                        <strong>Select a profile picture:</strong>
+                        <br>
+                        <input type="file" accept="image/*" onchange="chooseFile()"><br>
+                        <br>
+                        <a href="otherprofile.html" class="button small">Create Account</a>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="copyright">
+						&copy;Sadtech
+					</div>
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

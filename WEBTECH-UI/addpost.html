@@ -1,0 +1,73 @@
+
+<html>
+	<head>
+		<title>Jeep-P-S</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="hover.css" />
+        <script type="text/javascript" src="postconf.js"></script>
+        <script type="text/javascript" src="clear.js"></script>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>Jeep-P-S</strong></a>
+					<nav id="nav">
+						<a href="about.html">About</a>
+						<a href="view-guides.html">Forum</a>
+						<a href="faq.html">FAQ</a>
+						<a href="profile.html">Profile</a>
+           				 <a href="login.html"><u>Signout</u></a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+			<section id="one" class="wrapper">
+				<div>
+					<header class="align-center">
+                        <h3><strong>Add Post</strong></h3>
+					</header>
+                <form>
+                    <div class="row-uniform">
+                    <p class = "p1" style="text-alight:left"><strong> &nbsp; Question</strong></p>
+                    <input type="text" name="posttitle" id="post-title" value="" style="width:400px;"/>
+                  </div>
+                    <br>
+                    <p class = "p1" style="text-align:left"><strong>&nbsp; Description</strong></p>
+                     <input type="text" name="descp" id="descp" value="" style="width:600px; height:200px;"/>
+                </form>
+                </div>
+                <br>
+                <a href ="view-questions.html" class="button" onclick="postconf()">Post!</a>
+                <a class="button reset btnreset">Clear All</a>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="copyright">
+						&copy;Sadtech
+					</div>
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+      <script>
+      $(document).ready(function(){
+          $(".btnreset").click(function(){
+            $("#post-title").val(' ');
+            $("#descp").val(' ');
+          })
+        })
+      </script>
+
+	</body>
+</html>
